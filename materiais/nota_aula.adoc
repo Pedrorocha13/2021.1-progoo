@@ -229,9 +229,11 @@ Uma vantagem deste princípio é que as mudanças se tornam transparentes, ou se
 
 == Introdução a Java
 
-Neste capítulo vamos fazer um breve histórico sobre a principal linguagem usada na disciplina, traremos os conceitos de máquina virtual. Executaremos os primeiros programas, falaremos sobre tipos de dados e as estruturas básicas de seleção e repetição.
+Neste capítulo vamos fazer um breve histórico sobre a principal linguagem usada na disciplina e traremos o conceito de máquina virtual.
 
 Não falaremos aqui dos recursos necessários para rodar Java na sua máquina. Para isso, https://victor0machado.github.io/assets/progoo/slides.pdf[clique aqui] para acessar os slides da disciplina.
+
+Também não entraremos nos pormenores da linguagem, como sintaxe e semântica básicas. Para isso, assista às gravações das aulas.
 
 === O que é Java
 
@@ -252,13 +254,11 @@ A Sun criou um time (conhecido como Green Team) para desenvolver inovações tec
 
 A ideia não deu certo. Tentaram fechar diversos contratos com grandes fabricantes de eletrônicos, como Panasonic, mas não houve êxito devido ao conflito de interesses e custos. Hoje, sabemos que o Java domina o mercado de aplicações para celulares com mais de 2.5 bilhões de dispositivos compatíveis, porém em 1994 ainda era muito cedo para isso.
 
-Com o advento da web, a Sun percebeu que poderia utilizar a ideia criada em 1992 para rodar pequenas aplicações dentro do browser. A semelhança era que na internet havia uma grande quantidade de sistemas operacionais e browsers, e com isso seria grande vantagem poder programar numa única linguagem, independente da plataforma. Foi aí que o Java 1.0 foi lançado: focado em transformar o browser de apenas um cliente magro (thin client ou terminal burro) em uma aplicação que possa também realizar operações avançadas, e não apenas renderizar html.
+Com o advento da web, a Sun percebeu que poderia utilizar a ideia criada em 1992 para rodar pequenas aplicações dentro do browser. A semelhança era que na internet havia uma grande quantidade de sistemas operacionais e browsers, e com isso seria grande vantagem poder programar numa única linguagem, independente da plataforma. Foi aí que o Java 1.0 foi lançado: focado em transformar o browser de apenas um cliente magro (thin client ou terminal burro) em uma aplicação que possa também realizar operações avançadas, e não apenas renderizar HTML.
 
 Os applets deixaram de ser o foco da Sun, e nem a Oracle nunca teve interesse. É curioso notar que a tecnologia Java nasceu com um objetivo em mente, foi lançado com outro, mas, no final, decolou mesmo no desenvolvimento de aplicações do lado do servidor. Sorte? Há hoje o Java FX, tentando dar força para o Java não só no desktop mas como aplicações ricas na web, mas muitos não acreditam que haja espaço para tal, considerando o destino de tecnologias como Adobe Flex e Microsoft Silverlight.
 
-Em 2009 a Oracle comprou a Sun, fortalecendo a marca. A Oracle sempre foi, junto com a IBM,
-uma das empresas que mais investiram e fizeram negócios através do uso da plataforma Java. Em 2014
-surge a versão Java 8 com mudanças interessantes na linguagem.
+Em 2009 a Oracle comprou a Sun, fortalecendo a marca. A Oracle sempre foi, junto com a IBM, uma das empresas que mais investiram e fizeram negócios através do uso da plataforma Java. Em 2014 surge a versão Java 8 com mudanças interessantes na linguagem.
 
 === Máquina Virtual
 
