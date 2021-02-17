@@ -43,7 +43,7 @@ O principal insumo para a OO da forma como ela é conhecida hoje foi o conceito 
 
 Em 1962, no Centro Norueguês de Computação (NCC) da Universidade de Oslo havia dois pesquisadores, Kristen Nygaard e Ole-Johan Dahl, que aceitaram o projeto de criar uma linguagem de simulação de eventos discretos. Eles decidiram batizar sua linguagem de SIMULA I, tendo uma segunda versão chamada SIMULA 67. Essa última é reconhecida como a primeira linguagem de renome no que diz respeito ao universo da Orientação a Objetos.
 
-Um dos conceitos bases na criaçaõ de SIMULA I e SIMULA 67 foi de que a nova linguagem deveria ser *orientada a problemas* e não *orientada a computadores*. Isso implicou em um aumento da expressividade e facilidade de uso da linguagem. SIMULA I foi inicialmente baseada em FORTRAN, o que infelizmente se configurou em uma má decisão de projeto.
+Um dos conceitos bases na criação de SIMULA I e SIMULA 67 foi de que a nova linguagem deveria ser *orientada a problemas* e não *orientada a computadores*. Isso implicou em um aumento da expressividade e facilidade de uso da linguagem. SIMULA I foi inicialmente baseada em FORTRAN, o que infelizmente se configurou em uma má decisão de projeto.
 
 FORTRAN possuía uma estrutura de bloco que não possibilitava a expressividade essencial para a abordagem desejada por eles. Foi a partir dessa deficiência que SIMULA 67, que se baseou em ALGO 60 po possuir uma estrutura de blocos e dados mais amigável, foi lançada.
 
@@ -200,7 +200,7 @@ Já na associação, o reaproveitamento é diferente. Uma classe pede ajuda a ou
 
 ==== Encapsulamento
 
-Uma analogia com o mundo real será feita para inicialmente entendermos o que vem a ser o encapsulamento. Quando alguém se consulta com um médico, por estar com um resfriado, seria desesperados se ao final da consulta o médico entragasse a seguinte receita:
+Uma analogia com o mundo real será feita para inicialmente entendermos o que vem a ser o encapsulamento. Quando alguém se consulta com um médico, por estar com um resfriado, seria desesperados se ao final da consulta o médico entregasse a seguinte receita:
 
 ----
 Receituário (Complexo)
