@@ -17,13 +17,13 @@ Nota de Aula <victor.silva@professores.ibmec.edu.br>
 
 == Introdução
 
-Dentre os vários paradigmas de programação surgidos desde a década de 1950, o Paradigma Orientado a Objeto (POO) veio com a missão de cobrir as insuficiências existentes nos paradigmas anteriores, como o Estruturado.
+Dentre os vários paradigmas de programação surgidos desde a década de 1950, o Paradigma Orientado a Objeto (POO) veio com a missão de cobrir as insuficiências existentes nos paradigmas anteriores, como o Procedural.
 
 O POO tem como principal característica uma melhor e maior expressividade das necessidades do nosso dia-a-dia. Ele possibilita criar unidades de código mais próximas da forma como pensamos e agimos, facilitando o processo das necessidades diárias para uma linguagem orientada a objetos.
 
-Dá-se o nome de Programação Orientada a Objeto ao processo de usar uma linguagem orientada a objeto. Percebe-se que a sigla POO termina se fundindo entre o paradigma e a programação. Entretanto, é válido ressaltar que, em alguns casos, somente utilizar uma linguagem orientada a objetos não garante que se esteja programando efetivamente orientado a objetos, devido a "vícios estruturados" dos novos programadores desse paradigma, ou mesmo de programadores experientes.
+Dá-se o nome de Programação Orientada a Objeto ao processo de usar uma linguagem orientada a objeto. Percebe-se que a sigla POO termina se fundindo entre o paradigma e a programação. Entretanto, é válido ressaltar que, em alguns casos, somente utilizar uma linguagem orientada a objetos não garante que se esteja programando efetivamente orientado a objetos, devido a "vícios procedurais" dos novos programadores desse paradigma, ou mesmo de programadores experientes.
 
-Veremos ao longo do curso os principais conceitos e aplicabilidades do POO. Veremos como a OO trabalha para atingir os objetivos aos quais se propõe: ser um paradigma que represente de forma mais realista as necessidades das aplicações, em comparação ao paradigma estruturado.
+Veremos ao longo do curso os principais conceitos e aplicabilidades do POO. Veremos como a OO trabalha para atingir os objetivos aos quais se propõe: ser um paradigma que represente de forma mais realista as necessidades das aplicações, em comparação ao paradigma procedural.
 
 Veremos também as primeiras noções de UML e boas práticas de uso da OO, para podermos utilizá-la de forma eficiente e eficaz.
 
@@ -59,13 +59,13 @@ O Smalltalk trouxe facilidades como: interface gráfica amigável, um IDE, capac
 
 == Por que usar a Orientação a Objetos
 
-Segundo o Paradigma Estruturado, é possível representar todo e qualquer processo do mundo real a partir da utilização de *apenas* três estruturas básicas:
+Segundo o Paradigma Procedural, é possível representar todo e qualquer processo do mundo real a partir da utilização de *apenas* três estruturas básicas:
 
 * Sequência: Os passos devem ser executados um após o outro, linearmente. Ou seja, o programa seria uma sequência finita de passos. Em uma unidade de código, todos os passos devem ser feitos para se programar o algoritmo desejado;
 * Decisão: Uma determinada sequência de código pode ou não ser executada. Para isto, um teste lógico deve ser realizado para determinar ou não sua execução. A partir disto, verifica-se que duas estruturas de decisão (também conhecida como seleção) podem ser usadas: a `if-else` e a `switch`.
 * Iteração: É a execução repetitiva de um segmento (parte do programa). A partir da execução de um teste lógico, a repetição é realizada um número finito de vezes. Estruturas de repetição conhecidas são: `for`, `foreach`, `while`, `do-while`, `repeat-until`, entre outras (dependendo da linguagem de programação).
 
-Inicialmente, pode-se pensar que estas três estruturas são o suficiente para trabalhar. Entretanto, ao começarmos a fazer uma avaliação mais minuciosa, é possível notar algumas limitações. Por exemplo, somos acostumados a usar linguagens estruturadas para aprender a programar. Ou seja, criamos programas simples como cálculo de média, soma de números, um joguinho da velha, etc. Porém, quanto mais complexo o programa se torna, mais difícil fica a manutenção de uma sequência organizada de código.
+Inicialmente, pode-se pensar que estas três estruturas são o suficiente para trabalhar. Entretanto, ao começarmos a fazer uma avaliação mais minuciosa, é possível notar algumas limitações. Por exemplo, somos acostumados a usar linguagens procedurais para aprender a programar. Ou seja, criamos programas simples como cálculo de média, soma de números, um joguinho da velha, etc. Porém, quanto mais complexo o programa se torna, mais difícil fica a manutenção de uma sequência organizada de código.
 
 E se a necessidade agora for um controle de estoque? Uma aplicação deste tipo manipulará conceitos como produto, venda, estoque, cliente, etc. Este terá operações como vender, comprar, atualizar estoque, cadastrar produto, cadastrar cliente, etc. Logo, nota-se que isso levará a um emaranhado de código, muitas vezes muito extenso e propício à duplicação.
 
@@ -73,13 +73,13 @@ Para tentar amenizar essa situação, podemos recorrer a modularizações que es
 
 Em resumo, a simplificação da representação das reais necessidades dos problemas a serem automatizados leva a uma facilidade de entendimento e representação. Porém, isso pode levar a uma complexidade de programação caso o nicho de negócio do sistema-alvo seja complexo.
 
-Devido à sua fraca representatividade do mundo real, a Programação Estruturada foca na representação dos dados e operações desassociadas. Isto é, dados e operações de diversos conceitos são misturados, não ficando claro qual operação realmente está ligada aos específicos dados. A <<comp_paradigmas>> ilustra essa situação e mostra que a OO tem o objetivo de colocar ordem na casa com a interação entre objetos, que tem seu escopo bem delimitado.
+Devido à sua fraca representatividade do mundo real, a Programação Procedural foca na representação dos dados e operações desassociadas. Isto é, dados e operações de diversos conceitos são misturados, não ficando claro qual operação realmente está ligada aos específicos dados. A <<comp_paradigmas>> ilustra essa situação e mostra que a OO tem o objetivo de colocar ordem na casa com a interação entre objetos, que tem seu escopo bem delimitado.
 
 [#comp_paradigmas]
-.Programação Estruturada x Programação Orientada a Objeto
+.Programação Procedural x Programação Orientada a Objeto
 image::001.png[]
 
-Explicando de forma mais clara a figura anterior, na Programação Estruturada, devido ao fato de os dados não serem intimamente ligados às possíveis operações sobre estes, acabamos encontrando códigos similares ao apresentado a seguir:
+Explicando de forma mais clara a figura anterior, na Programação Procedural, devido ao fato de os dados não serem intimamente ligados às possíveis operações sobre estes, acabamos encontrando códigos similares ao apresentado a seguir:
 
 ----
 struct produto {
@@ -107,7 +107,7 @@ void adicionarProduto(Venda venda, Produto produto) {
 }
 ----
 
-Nesse código, há uma mistura de dados diferentes que representam entidades diferentes, mas que estão definidos em uma mesma unidade de código. Isto acaba por levar também a uma mistura das operações que vão manipular tais dados. Assim, nota-se que a Programação Estruturada tem como filosofia que funções afins manipulem diversas variáveis definidas de forma global - no caso, `structs`. Com isso, facilmente seria possível fazer, de forma errônea, uma função usar dados que não lhe dizem respeito.
+Nesse código, há uma mistura de dados diferentes que representam entidades diferentes, mas que estão definidos em uma mesma unidade de código. Isto acaba por levar também a uma mistura das operações que vão manipular tais dados. Assim, nota-se que a Programação Procedural tem como filosofia que funções afins manipulem diversas variáveis definidas de forma global - no caso, `structs`. Com isso, facilmente seria possível fazer, de forma errônea, uma função usar dados que não lhe dizem respeito.
 
 [#func_acessando_globais]
 .Funções acessando variáveis globais
@@ -119,7 +119,7 @@ Ao contrário disto, a OO preconiza que os dados relativos a uma representação
 .Objetos chamando métodos
 image::003.png[]
 
-Tendo em vista as diferentes formas de funcionamento desses paradigmas, para se fazer uma transição segura do estruturado para o OO, é necessário saber que, devido a essa desassociação entre dados/funções na Programação Estrutura, somente os dados são trafegados dentro da aplicação. Já na OO, os dados são transmitidos junto com suas operações, pois, ao contrário do outro paradigma, ambos - dados e operações, estão definidos em uma única e organizada unidade de código. Isso torna a manipulação de tais dados mais segura e simplificada.
+Tendo em vista as diferentes formas de funcionamento desses paradigmas, para se fazer uma transição segura do procedural para o OO, é necessário saber que, devido a essa desassociação entre dados/funções na Programação Procedural, somente os dados são trafegados dentro da aplicação. Já na OO, os dados são transmitidos junto com suas operações, pois, ao contrário do outro paradigma, ambos - dados e operações, estão definidos em uma única e organizada unidade de código. Isso torna a manipulação de tais dados mais segura e simplificada.
 
 A partir do que foi exposto, verifica-se que esta simplicidade culmina em algumas dificuldades, que podem onerar, tornar mais complexo, ser mais propenso à geração de erros no processo de desenvolvimento. A seguir, serão apresentadas quais são essas deficiências e, de forma introdutória, como a OO provê a solução para elas.
 
@@ -130,23 +130,23 @@ Em linguagem de programação podemos reutilizar duas coisas:
 * Comportamentos - no caso operações, serviços, ações;
 * Informações - no caso dados, características.
 
-Sem utilizar a OO, podemos atingir o reuso, porém isso tem um custo. Quanto mais complexo o sistema que queremos desenvolver, teremos cada vez mais redefinições, propícios a erros de esquecimento e pontos de falhas. Linguagens estruturadas, como C, possuem mecanismos que permitem o reuso em certo grau, como o uso de `structs` ou de `headers`, porém a quantidade de estruturas necessárias para possibilitar a reutilização do código é extensa e muitas vezes trabalhosa.
+Sem utilizar a OO, podemos atingir o reuso, porém isso tem um custo. Quanto mais complexo o sistema que queremos desenvolver, teremos cada vez mais redefinições, propícios a erros de esquecimento e pontos de falhas. Linguagens procedurais, como C, possuem mecanismos que permitem o reuso em certo grau, como o uso de `structs` ou de `headers`, porém a quantidade de estruturas necessárias para possibilitar a reutilização do código é extensa e muitas vezes trabalhosa.
 
-Para suprir tais dificuldades, a OO disponibiliza dois mecanismos para reuso de código: a herança e a associação. A partir deles é possível criarmos unidades de código que compartilham códigos de forma estrutural, ou seja, não são blocos de código dispersos. Eles criam um relacionamento que, além de possibilitar o reuso de forma mais prática e menos propícia a erros, ainda gera uma modelagem mais próxima do mundo real. Quando for aprsentado o termo *gap semântico*, a ideia de "modelagem mais próxima do mundo real" ficará mais clara.
+Para suprir tais dificuldades, a OO disponibiliza dois mecanismos para reuso de código: a herança e a associação. A partir deles é possível criarmos unidades de código que compartilham códigos de forma procedural, ou seja, não são blocos de código dispersos. Eles criam um relacionamento que, além de possibilitar o reuso de forma mais prática e menos propícia a erros, ainda gera uma modelagem mais próxima do mundo real. Quando for aprsentado o termo *gap semântico*, a ideia de "modelagem mais próxima do mundo real" ficará mais clara.
 
 === Coesão
 
 Este princípio preconiza que cada unidade de código deve ser responsável somente por possuir informações e executar tarefas que dizem respeito somente ao conceito que ela pretende representar. A ideia por detrás da coesão é não misturar responsabilidades, para evitar que a unidade de código fique sobrecarregada com dados e tarefas que não lhe dizem respeito.
 
-Em linguagens estruturadas, como C, é necessário recorrermos a `headers` e módulos que, como já vimos, pode trazer complexidade excessiva ao código, gerando maior risco de falhas.
+Em linguagens procedurais, como C, é necessário recorrermos a `headers` e módulos que, como já vimos, pode trazer complexidade excessiva ao código, gerando maior risco de falhas.
 
 Para agilizar o processo de desenvolvimento, a OO disponibiliza conceitos que facilitam a vida do desenvolvedor: classe e associação. Criar unidades de código mais coesas com esses conceitos é mais simples do que trabalhar com `headers` e módulos. Concomitantemente a esses dois conceitos, o uso de métodos e atributos contribui para a definição de unidades de código que sejam responsáveis somente por tarefas e conceitos às quais elas se propõem, assim evitando uma "salada mista" de responsabilidades.
 
 === Acoplamento
 
-Acoplamento é um termo usado para medir (quantificar) o relacionamento entre unidades de código que são unidas, acopladas, para que nossa aplicação consiga executar suas atividades da forma desejada. A princípio, podemos pensar que linguagens estruturadas não possuem acoplamento, pois elas possuem somente uma unidade de código, o Módulo Principal. Todavia, o conceito de acoplamento é mais amplo.
+Acoplamento é um termo usado para medir (quantificar) o relacionamento entre unidades de código que são unidas, acopladas, para que nossa aplicação consiga executar suas atividades da forma desejada. A princípio, podemos pensar que linguagens procedurais não possuem acoplamento, pois elas possuem somente uma unidade de código, o Módulo Principal. Todavia, o conceito de acoplamento é mais amplo.
 
-Em uma linguagem estruturada, o acoplamento existe entre o Módulo Principal com suas _funções_ - ou mesmo entre funções, com `headers`, módulos e qualquer outra estrutura que possua seu próprio código. Em linguagens estruturadas, o acoplamento pode se tornar um problema devido ao processo de compilação ou `linkagem` dessas linguagens. Em resumo, quanto mais baixo for o nível de estruturação do código, mais complexo torna-se o processo de se trabalhar com o acoplamento.
+Em uma linguagem procedural, o acoplamento existe entre o Módulo Principal com suas _funções_ - ou mesmo entre funções, com `headers`, módulos e qualquer outra estrutura que possua seu próprio código. Em linguagens procedurais, o acoplamento pode se tornar um problema devido ao processo de compilação ou `linkagem` dessas linguagens. Em resumo, quanto mais baixo for o nível de estruturação do código, mais complexo torna-se o processo de se trabalhar com o acoplamento.
 
 Não obstante, é necessário usar acoplamento para organizar o código e dividir responsabilidades com outras unidades de código. Ao citar "dividir responsabilidades", logo, nota-se que há um relacionamento muito íntimo entre acoplamento e coesão. Ou seja, para atingirmos uma boa coesão, é necessário dividir responsabilidades e acoplar a outras unidades de código. A partir disto, verificamos que este "relacionamento íntimo" é importante, mas deve ser muito bem dosado para não gerar códigos difíceis de serem mantigos.
 
@@ -158,7 +158,7 @@ Também chamado de _Fosso Semântico_, este termo caracteriza a diferença exist
 
 Representar os conceitos que as aplicações necessitam para se tornarem projetos de sucesso de forma adequada e realista é um desafio. Em linguagens como C - em que é necessário se preocupar mais em definir entradas, processá-las e gerar saídas -, fica difícil trabalhar em alto nível. Trabalhar com variáveis (globais ou locais) e funções que são definidas desassociadamente dessas variáveis - mas que devem operar sobre elas - não é um trabalho amigável, principalmente em aplicações de grande porte, que são mais complexas por natureza.
 
-Por mais que criemos `structs`para tentar aglutinar informações, as funções ainda estariam desassociadas delas. Esse gap da representação estruturada em relação ao mundo real é o que torna este paradigma limitado. Essa dificuldade é a grande diferença da Orientação a Objetos. Ela disponibiliza, principalmente, os conceitos de classe, atributo, método e objeto para conseguir representar de forma mais realista os conceitos que a aplicação deseja representar.
+Por mais que criemos `structs`para tentar aglutinar informações, as funções ainda estariam desassociadas delas. Esse gap da representação procedural em relação ao mundo real é o que torna este paradigma limitado. Essa dificuldade é a grande diferença da Orientação a Objetos. Ela disponibiliza, principalmente, os conceitos de classe, atributo, método e objeto para conseguir representar de forma mais realista os conceitos que a aplicação deseja representar.
 
 == Introdução a Orientação a Objetos
 
@@ -348,5 +348,3 @@ Muitos erros podem ocorrer no momento que você rodar seu primeiro código. Vamo
 * Da mesma forma, declaração de classes e variáveis devem seguir o mesmo `case` usado na declaração;
 * Por convenção, utiliza-se o estilo _camelCase_ para a nomeação de classes, métodos e variáveis em Java. Para a declaração de classes, sempre comece com uma letra maiúscula. Para métodos e variáveis, sempre comece com uma letra minúscula;
 * O nome do arquivo `.java` deve sempre refletir o nome da classe presente dentro do arquivo.
-
-
