@@ -1,3 +1,5 @@
 testes/*
-referencias/*
-roteiros/*
+referencias
+roteiros
+**/.vscode
+notas_faltas.xlsx
