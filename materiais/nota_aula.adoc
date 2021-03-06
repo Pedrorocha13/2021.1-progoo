@@ -383,13 +383,13 @@ Após o processo inicial de identificar as entidades (classes) que devem ser man
 
 _Atributo é o elemento de uma classe responsável por definir sua estrutura de dados. O conjunto destes será responsável por representar suas características e fará parte dos objetos criados a partir da classe._
 
-Essa definição deixa bem claro que os atributos devem ser definidos dentro da classe. Devido a isso, são rsponsáveis por definir sua estrutura de dados. É a partir do uso de atributos que será possível caracterizar (detalhar) as classes, sendo possível representar fielmente uma entidade do mundo real.
+Essa definição deixa bem claro que os atributos devem ser definidos dentro da classe. Devido a isso, são responsáveis por definir sua estrutura de dados. É a partir do uso de atributos que será possível caracterizar (detalhar) as classes, sendo possível representar fielmente uma entidade do mundo real.
 
 Assim como nas classes, os atributos podem ser representados a partir de substantivos. Além destes, podemos também usar adjetivos. Pensar em ambos pode facilitar o processo de identificação dos atributos.
 
 Por exemplo, imagine que a entidade `Paciente` foi identificada para o sistema hospitalar. Alguns de seus atributos podem ser nome, CPF, sexo. Todos estes são substantivos, mas alguns de seus valores poderiam ser adjetivos. Quanto mais for realizado o processo de caracterização, mais detalhada será a classe e, com isso, ela terá mais atributos. Porém, é preciso ter parcimônia no processo de identificação dos atributos.
 
-Embora um atributo possa pertencer à classe, nem sempre fará sentido ele ser definido. Isso ocorre devido ao *contexto* no qual a classe vai ser usada. Por exemplo, foi vitso anteriormente que `Paciente` não deixa de ser uma `Pessoa`, e geralmente elas possuem um hobby. Porém, em um contexto hospitalar, este atributo não agragaria muito valor. Já em `Cliente` - que também é uma pessoa - seria mais interssante, pois a partir de seu hobby poderiam ser apresentados produtos que lhe interessassem mais. Percebe-se, com isso, que o contexto de uso da classe vai impactar diretamente no processo de definição de seus atributos.
+Embora um atributo possa pertencer à classe, nem sempre fará sentido ele ser definido. Isso ocorre devido ao *contexto* no qual a classe vai ser usada. Por exemplo, foi visto anteriormente que `Paciente` não deixa de ser uma `Pessoa`, e geralmente elas possuem um hobby. Porém, em um contexto hospitalar, este atributo não agregaria muito valor. Já em `Cliente` - que também é uma pessoa - seria mais interessante, pois a partir de seu hobby poderiam ser apresentados produtos que lhe interessassem mais. Percebe-se, com isso, que o contexto de uso da classe vai impactar diretamente no processo de definição de seus atributos.
 
 Ainda no processo de identificação e criação dos atributos, é válido ressaltar que nem sempre uma informação, mesmo sendo importante (uma característica inerente à entidade), deve ser transformada em um atributo. Um exemplo clássico disso é a idade. Embora essa seja uma característica válida e importante para uma pessoa, seja ela um `Paciente` ou `Cliente`, devido ao trabalho de mantê-la atualizada (todo ano fazemos aniversário), não valeria a pena criá-la.
 
@@ -403,13 +403,13 @@ Utilize nomes claros. Evite, por exemplo, o atributo `data`. Uma data pode signi
 
 === O método
 
-Tendo identificado a classe com seus atributos, a seguinte pergunta pode surgir: mas o que fazer com eles? Como utilizar a classe e manipular os atributos? É nessa hora que o método entra em cena. Este é responsável por identificar e executar as operações que a classe fornecerá. Essas operações, via de regra, têm como finalidade manipular os atributos.
+Tendo identificado a classe com seus atributos, as seguintes perguntas podem surgir: mas o que fazer com eles? Como utilizar a classe e manipular os atributos? É nessa hora que o método entra em cena. Este é responsável por identificar e executar as operações que a classe fornecerá. Essas operações, via de regra, têm como finalidade manipular os atributos.
 
 _Método é uma porção de código (sub-rotina) que é disponibilizada pela classe. Esta é executada quando é feita uma requisição a ela. Um método serve para identificar quais serviços, ações, que a classe oferece. Eles são responsáveis por definir e realizar um determinado comportamento._
 
 Para facilitar o processo de identificação dos métodos de uma classe, podemos pensar em verbos. Isso ocorre devido à sua própria definição: _ações_. Ou seja, quando se pensa nas ações que uma classe venha a ofereces, estas identificam seus métodos.
 
-No processo de definição de um método, a sua assinatura deve ser identificada. Esta nada mais é do que o nome do método e sua lista de parâmetros. Mas como nomear os métodos? Novamente, uma expressivdade ao nome do método deve ser fornecida, assim como foi feito com o atributo.
+No processo de definição de um método, a sua assinatura deve ser identificada. Esta nada mais é do que o nome do método e sua lista de parâmetros. Mas como nomear os métodos? Novamente, uma expressividade ao nome do método deve ser fornecida, assim como foi feito com o atributo.
 
 Por exemplo, no contexto do hospital, imagine termos uma classe `Procedimento`, logo, um péssimo nome de método seria `calcular`. Calcular o quê? O valor total do procedimento, o quanto cada médico deve receber por ele, o lucro do plano? Neste caso, seria mais interessante `calcularTotal`, `calcularGanhosMedico`, `calcularLucro`.
 
@@ -423,7 +423,7 @@ Além destes, o método pode também retornar qualquer um dos conceitos (classes
 
 ==== Dois métodos especiais
 
-Em uma classe, independente de qual conceito ela queira representar, podemos ter quantos métodos forem necessários. Cada um será responsável por uma determinada operação que a classe deseja oferecer. Muitas vezes, os métodos trabalham em conjunto para realizar seus comportamentos. Além disso, independente da quantidade e da finalidade dos métodos de uma classe, existem dois especiais que toda classe possui. o construtor e o destruidor.
+Em uma classe, independente de qual conceito ela queira representar, podemos ter quantos métodos forem necessários. Cada um será responsável por uma determinada operação que a classe deseja oferecer. Muitas vezes, os métodos trabalham em conjunto para realizar seus comportamentos. Além disso, independente da quantidade e da finalidade dos métodos de uma classe, existem dois especiais que toda classe possui: o construtor e o destrutor.
 
 O construtor é responsável por criar objetos - na seção _O objeto_, será visto como é este processo de criação - a partir da classe em questão. Ou seja, sempre que for necessário criar objetos de uma determinada classe, seu construtor deverá ser utilizado. É através do seu uso que será possível instanciar objetos e, a partir disto, manipular de forma efetiva seus atributos e métodos.
 
@@ -447,7 +447,7 @@ O Garbage Collector possui algoritmos de identificação de objetos ociosos que,
 
 ==== A sobrecarga de método
 
-Muitas vezes, é preciso que um mesmo método possua entradas (parâmetros) diferentes. Isso ocorre porque ele pode precisar realizar operações diferentes em determinado contexto. Este processo é chamado de sobrecarga de método.
+Muitas vezes, é preciso que um mesmo método possua entradas (parâmetros) diferentes. Isso ocorre porque ele pode precisar realizar operações diferentes em determinado contexto. Este processo é chamado de *sobrecarga de método*.
 
 Para realizá-la, devemos manter o nome do método intacto, mas alterar sua lista de parâmetros. Podem ser acrescentados ou retirados parâmetros para assim se prover um novo comportamento. Por exemplo, se uma determinada aplicação tivesse uma classe para representar um quadrilátero, ela deveria se chamar `Quadrilátero` e possuir o método `calcularArea`, seguindo as boas práticas já citadas. Mas sabemos que um quadrado, retângulo, losango e trapézio também são quadriláteros.
 
@@ -479,7 +479,7 @@ class Quadrilatero {
 
 No exemplo acima, a quantidade de parâmetros (nos 3 primeiros métodos) e os tipos (no último método) foram alterados. Isso demonstra que, caso haja necessidade, os tipos também podem ser mudados. Se fosse preciso que o cálculo das áreas só fosse feito a partir de medidas inteiras, nada impediria que os tipos `double` ou `float` fossem trocados por `int` ou `long`. Neste caso, seriam outras sobrecargas para o método `calcularArea`.
 
-Ou seja, sempre que a lista de parâmteros muda - seja acrescentand ou eliminando parâmetros, mudando seus tipos e até mesmo sua sequência -, estaremos criando sobrecargas de um método. Mas lembre-se de que o nome dele deve permanecer intacto.
+Ou seja, sempre que a lista de parâmetros muda - seja acrescentando ou eliminando parâmetros, mudando seus tipos e até mesmo sua sequência -, estaremos criando sobrecargas de um método. Mas lembre-se de que o nome dele deve permanecer intacto.
 
 A vantagem de usar a sobrecarga não se limita à "facilidade" de se manter o mesmo nome do método. Na verdade, existe uma questão conceitual, que é manter a abstração. Como exploramos por aqui, a OO surgiu para representar de forma mais realista e fidedigna as necessidades que devem ser transportadas para dentro do software.
 
