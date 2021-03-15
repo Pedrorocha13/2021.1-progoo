@@ -5,6 +5,10 @@ public class Conta {
     String agencia;
     double saldo;
 
+    public Conta() {
+        
+    }
+
     void sacar(double quantidade) {
         this.saldo -= quantidade;
     }
