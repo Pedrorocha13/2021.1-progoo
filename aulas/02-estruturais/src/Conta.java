@@ -6,7 +6,17 @@ public class Conta {
     double saldo;
 
     public Conta() {
-        
+        this.saldo = 0;
+        this.numero = 0;
+        this.agencia = "Sem agência";
+        this.titular = new Cliente();
+    }
+
+    public Conta(int numero, Cliente titular, String agencia) {
+        this.saldo = 0;
+        this.numero = numero;
+        this.agencia = agencia;
+        this.titular = titular;
     }
 
     void sacar(double quantidade) {

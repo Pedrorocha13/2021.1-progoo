@@ -2,17 +2,13 @@ public class Programa {
     public static void main(String[] args) {
         Conta minhaConta;
 
-        minhaConta = new Conta();
-
         Cliente c = new Cliente();
         c.nome = "Victor";
         c.sobrenome = "Machado";
         c.cpf = "111.222.333-44";
 
-        minhaConta.titular = c;
-        minhaConta.saldo = 1000.0;
-        minhaConta.numero = 123;
-        minhaConta.agencia = "1111-1";
+        minhaConta = new Conta(123, c, "1111-1");
+        minhaConta.depositar(1000.0);
 
         System.out.println(minhaConta.exibeInfoConta());
 
