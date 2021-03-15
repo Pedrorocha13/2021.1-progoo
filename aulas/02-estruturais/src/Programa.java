@@ -2,10 +2,7 @@ public class Programa {
     public static void main(String[] args) {
         Conta minhaConta;
 
-        Cliente c = new Cliente();
-        c.nome = "Victor";
-        c.sobrenome = "Machado";
-        c.cpf = "111.222.333-44";
+        Cliente c = new Cliente("Victor", "Machado", "111.222.333-44", "r. X");
 
         minhaConta = new Conta(123, c, "1111-1");
         minhaConta.depositar(1000.0);
@@ -15,7 +12,7 @@ public class Programa {
         minhaConta.sacar(200.0);
         minhaConta.depositar(500.0);
 
-        System.out.println("Saldo atual: R$" + minhaConta.saldo);
+        System.out.println("Saldo atual: R$" + minhaConta.consultarSaldo());
 
         minhaConta.sacar(10000);
         if (minhaConta.estaUsandoLimite()) {
@@ -31,8 +28,8 @@ public class Programa {
         c2 = c1;
         c2.depositar(300);
 
-        System.out.println(c1.saldo);
-        System.out.println(c2.saldo);
+        System.out.println(c1.consultarSaldo());
+        System.out.println(c2.consultarSaldo());
 
         if (c1 == c2) {
             System.out.println("Contas iguais");
@@ -50,7 +47,7 @@ public class Programa {
         }
 
         c1.transferir(100, c2);
-        System.out.println(c1.saldo);
-        System.out.println(c2.saldo);
+        System.out.println(c1.consultarSaldo());
+        System.out.println(c2.consultarSaldo());
     }
 }

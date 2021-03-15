@@ -46,4 +46,8 @@ public class Conta {
 
         return mensagem;
     }
+
+    double consultarSaldo() {
+        return this.saldo;
+    }
 }
