@@ -3,6 +3,10 @@ public class IfElse {
         /*
         if (condicao) {
             codigo;
+        } else if (condicao) {
+            codigo;
+        } else if (condicao) {
+            codigo;
         } else {
             codigo;
         }
@@ -31,5 +35,33 @@ public class IfElse {
         == - "Igualdade"
         != - "Diferente"
         */
+
+        // switch
+        /*
+        switch (variavel) {
+            case <valor_1>:
+                codigo;
+                break;
+            case <valor_2>:
+                codigo;
+                break;
+            [...]
+            default:
+                codigo;
+        }
+        */
+
+        int numero = 10;
+
+        switch (numero) {
+            case 1:
+                System.out.println("Um");
+                break;
+            case 2:
+                System.out.println("Dois");
+                break;
+            default:
+                System.out.println("Muito alto");
+        }
     }
 }
