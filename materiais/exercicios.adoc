@@ -66,3 +66,12 @@ Lista de Exercícios <victor.silva@professores.ibmec.edu.br>
             }
         }
     }
+
+== Introdução a UML: Diagrama de Classes
+
+. Identifique e nomeie as classes conceituais no texto a seguir. Lembre-se de que as classes conceituais são entidades sobre as quais nos interessa armazenar alguma informação. Relacione uma ou mais dessas informações para cada classe identificada, não se preocupando em ser completo. Apenas pense em algumas delas como mecanismos para identificar as classes.
+
+    As universidades do município de Sertãozinho Alegre são separadas em _campi_, e cada _campus_ é dividido em um ou mais departamentos (Letras, Matemática etc.). Um departamento é chefiado por um de seus professores, mas há casos em que esse cargo está vago. Não há acúmulo de chefia. Os professores podem estar alocados em um ou mais departamentos. Um departamento pode ser criado sem que haja professores alocados a ele. Um aluno pode estar matriculado em mais de uma universidade e pode frequentar mais de uma disciplina na mesma universidade. As universidades podem não ter alunos matriculados. Cada departamento tem seu conjunto específico de disciplinas (pelo menos uma). Cada disciplina pode ser ministrada por um ou mais professores. Cada professor pode ministrar qualquer número de disciplinas.
+
+. Relacione e dê nomes adequados a alguns atributos que você imagina serem importantes para as classes identificadas no exercício anterior. Adote a notação da UML para formar rótulos completos de atributos. Use visibilidades, tipos, multiplicidades e valores default que julgar mais convenientes.
+. Elabore o modelo conceitual de classes referente ao texto do primeiro exercício.
