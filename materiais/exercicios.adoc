@@ -75,3 +75,4 @@ Lista de Exercícios <victor.silva@professores.ibmec.edu.br>
 
 . Relacione e dê nomes adequados a alguns atributos que você imagina serem importantes para as classes identificadas no exercício anterior. Adote a notação da UML para formar rótulos completos de atributos. Use visibilidades, tipos, multiplicidades e valores default que julgar mais convenientes.
 . Elabore o modelo conceitual de classes referente ao texto do primeiro exercício.
+. Implemente em Java o projeto referente ao primeiro exercício.
