@@ -1,0 +1,91 @@
+= Projeto Integrador: Programação Orientada a Objetos
+Pedido para Projeto de Disciplina <victor.silva@professores.ibmec.edu.br>
+:stem:
+:toc: left
+:toclevels: 3
+:imagesdir: img
+:figure-caption: Figura
+:table-caption: Tabela
+:listing-caption: Algoritmo
+:xrefstyle: short
+:sectnums:
+
+:stylesheet: manual.css
+:icons: font
+
+<<<
+
+== Introdução
+
+Este documento tem por finalidade apresentar os requisitos funcionais para o software a ser desenvolvido pela turma, com o foco no apoio para uma loja de vestuário.
+
+== Formato da avaliação
+
+* Turma dividida em duplas ou trios;
+* Cada grupo deverá criar um projeto privado no github, que terá todos os participantes do grupo e eu (victor0machado) como colaboradores;
+* Cada etapa do trabalho será desenvolvida em um branch específico. Para a entrega do trabalho, deverá ser aberto um pull request para o branch master, comigo como assignee do pull request;
+* Além disso, uma única pessoa do grupo deverá fazer uma entrega pelo Teams, com um arquivo texto com o link para o pull request;
+
+== Critérios de avaliação
+
+* 20% - Projeto do software: o software foi bem modelado, utilizando os modelos previstos na UML adequados para aquela fase do projeto;
+* 10% - Formato do código: o código escrito segue as boas práticas de nomenclatura de classes, métodos, atributos e variáveis, possui boa legibilidade e é bem organizado;
+* 30% - Eficácia do software: o software atende aos requisitos funcionais estabelecidos para aquela iteração específica do projeto (e apenas a eles!);
+* 40% - Eficiência do software: o software foi bem implementado, as boas práticas de orientação a objetos foram seguidas e a solução foi criativa e otimizada, quando possível.
+
+== Requisitos Funcionais e Regras de Negócio
+
+=== Sprint 1 - Prazo 28/04/2021
+
+.Requisitos funcionais para a sprint 1
+[cols="^1,7"]
+|===
+|# ^|Descrição
+
+|RF1
+|O software deve permitir o cadastro de clientes. Cada cliente deve ser cadastrado com nome completo, CPF, data de nascimento, telefone de contato e e-mail.
+
+|RF2
+|O software deve permitir o cadastro de funcionários. Cada funcionário deve ser cadastrado com nome completo, CPF, data de nascimento, telefone de contato, e-mail e data de admissão.
+
+|RF3
+|O software deve verificar se o CPF inserido no cadastro é válido e único no sistema, entre os clientes cadastrados, e entre os funcionários cadastrados.
+
+|RF4
+|O software deve gerar, automaticamente, uma matrícula única e sequencial para cada novo funcionário cadastrado. Cada matrícula gerada deve ser composta por quatro caracteres, começando por `0001` e seguindo sequencialmente.
+
+|RF5
+|O software deve permitir o cadastro de novos produtos na loja. Cada produto deverá ter registrado o seu modelo, estampa e tamanho.
+
+|RF6
+|O software deve gerar um código único para cada produto. O código é formado por quatro caracteres, começando por `0001` e seguindo sequencialmente.
+
+|RF7
+|O software deve permitir alterar as quantidades dos produtos.
+
+|RF8
+|O software deve possibilitar que o cliente efetue uma venda. A venda deve ser armazenada com um caractere numérico sequencial, e realizada registrando o código da venda, o cliente (pelo CPF), o vendedor, o valor total e os produtos vendidos.
+
+|RF9
+|Antes de finalizar cada venda, o software deve dar baixa nos produtos cadastrados.
+
+|RF10
+|O software deve ter uma interface de texto para receber e retornar as informações para o usuário.
+
+|RF11
+|O cliente deve poder visualizar as compras efetuadas em seu CPF.
+
+|===
+
+.Regras de negócio para a sprint 1
+[cols="^1,7"]
+|===
+|# ^|Descrição
+
+|RN1
+|O telefone deve ser armazenado com o DDD e possuindo 8 ou 9 dígitos.
+
+|RN2
+|O e-mail deve ser no formato `nome@dominio.com` ou `nome@dominio.com.br`.
+
+|===
