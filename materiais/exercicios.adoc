@@ -76,3 +76,23 @@ Lista de Exercícios <victor.silva@professores.ibmec.edu.br>
 . Relacione e dê nomes adequados a alguns atributos que você imagina serem importantes para as classes identificadas no exercício anterior. Adote a notação da UML para formar rótulos completos de atributos. Use visibilidades, tipos, multiplicidades e valores default que julgar mais convenientes.
 . Elabore o modelo conceitual de classes referente ao texto do primeiro exercício.
 . Implemente em Java o projeto referente ao primeiro exercício.
+
+== Arrays
+
+. Crie uma classe `TestaArrays` e no método `main` crie um array de contas de tamanho 10. Em seguida, faça um loop para criar 10 contas com saldos distintos (por exemplo, multiplicando o índice do loop por 100 para gerar o saldo).
+. Ainda na classe `TestaArrays`, faça outro loop para calcular e imprimir a média dos saldos de todas as contas do array.
+. Crie uma classe `TestaSplit` que reescreva uma frase com as palavras na ordem invertida. "Socorram-me, subi no ônibus em Marrocos" deve retornar "Marrocos em ônibus no subi Socorram-me,". Utilize o método `split` da `Sprint` para te auxiliar. Esse método divide uma `String` de acordo com o separador especificado e devolve as partes em um array de `String`, por exemplo:
+
+    String frase = "Uma mensagem qualquer";
+    String[] palavras = frase.split();
+
+    // Agora só basta percorrer o array na ordem inversa imprimindo as palavras
+
+. No projeto desenvolvido em aula, crie um método para verificar se uma determinada `Conta` se encontra ou não como conta deste banco:
+
+    public boolean contem(Conta conta) {
+        // código
+    }
+
+. No projeto desenvolvido em aula, atualize o método `criarConta` para, caso todas as contas já tenham sido preenchidas, ele chame o método `expandir`, passando como argumento uma nova capacidade igual à capacidade anterior mais um, para só então criar a conta desejada.
+
