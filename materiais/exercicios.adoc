@@ -117,3 +117,13 @@ Lista de Exercícios <victor.silva@professores.ibmec.edu.br>
 .. Às sextas-feiras, às 18h, o expediente para o público é encerrado e às 18h30min o sistema automaticamente imprime a relação de
 inadimplentes...
 .. ...o chefe do suporte é informado pela rotina de autenticação do sistema, via "torpedo", de qualquer pedido de autenticação feito pelos usuários cadastrados na lista negra de usuários.
+
+. Esboce o diagrama e descreva o caso _Registrar Compra_ em um sistema para um supermercado hipotético, do qual participa o _Caixa_, registrando a compra, eventualmente o _Cliente_, quando o pagamento é feito por débito ou crédito no cartão e ele precisa informar a senha, além do _Supervisor de Vendas_, quando é necessário retirar um ou mais itens da lista compras ou reimprimi-la. Use sua vivência para estabelecer os passos que compõem a descrição, mas não se esqueça de considerar as situações em que:
+.. Tudo dá certo;
+.. Você não tem o dinheiro suficiente para pagar toda a compra, podendo perceber isso durante o registro ou ao final dele;
+.. A fita de papel da máquina registradora acaba no meio da compra e o supervisor precisa intervir com seus "superpoderes" para comandar a
+reimpressão da lista desde o início;
+.. Você discorda do preço de um item que estava em oferta e pede ao caixa que retire o item da lista. Nesse caso, o supervisor também precisa intervir;
+.. O código de barras não pôde ser lido pela leitora ótica e o caixa o informa pelo teclado;
+.. O código do item não consta do cadastro;
+.. Você paga em cartão com chip (no débito ou no crédito) ou em dinheiro, o que é bem menos frequente naquele supermercado.
