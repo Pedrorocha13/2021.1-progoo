@@ -92,7 +92,7 @@ Este documento tem por finalidade apresentar os requisitos funcionais para o sof
 
 === Sprint 2 - Prazo 26/05/2021
 
-Além da refatoração do código anterior conforme comentários apresentados pelo cliente, incluir o diagrama de classes do projeto e o diagrama de casos de uso (com descrição) de pelo menos quatro funcionalidades.
+Além da refatoração do código anterior conforme comentários apresentados pelo cliente, incluir o diagrama de classes do projeto e o diagrama de casos de uso (com descrição) de pelo menos três funcionalidades.
 
 Incluir também o projeto e implementação dos seguintes requisitos funcionais:
 
