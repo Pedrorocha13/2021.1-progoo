@@ -1,8 +1,8 @@
 package br.ibmec.progoo.entidades;
 
 public class Cliente {
-    String nome;
-    String sobrenome;
+    private String nome;
+    private String sobrenome;
 
     public Cliente(String nome, String sobrenome) {
         this.nome = nome;
@@ -10,6 +10,6 @@ public class Cliente {
     }
 
     public String infoCliente() {
-        return this.cpf + " - " + this.nome + " " + this.sobrenome;
+        return this.nome + " " + this.sobrenome;
     }
 }
