@@ -1,5 +1,7 @@
 package br.ibmec.progoo.programa;
 
+import java.io.IOException;
+
 import br.ibmec.progoo.entidades.Cliente;
 import br.ibmec.progoo.util.LeitoraDados;
 
@@ -16,10 +18,11 @@ public class Seletor {
         System.out.println("2 - Atualizar um cliente;");
         System.out.println("3 - Remover um cliente;");
         System.out.println("4 - Pesquisar um cliente pelo CPF;");
-        System.out.println("5 - Exibir todos os clientes cadastrados.");
+        System.out.println("5 - Exibir todos os clientes cadastrados;");
+        System.out.println("6 - Salvar clientes em um arquivo de texto.");
     }
 
-    public String processaOpcoes(String opcao) {
+    public String processaOpcoes(String opcao) throws IOException {
         switch(opcao) {
             case "1":
                 Cliente novoCliente = leitoraDados.lerNovoCliente();
@@ -48,6 +51,12 @@ public class Seletor {
                 break;
             case "5":
                 Cliente.exibirTodos();
+                break;
+            case "6":
+                System.out.print("Informe o nome do arquivo para salvar: ");
+                String caminhoExportar = leitoraDados.lerTexto();
+
+                Cliente.exportar(caminhoExportar);
                 break;
             default:
                 System.out.println("Volte sempre!");

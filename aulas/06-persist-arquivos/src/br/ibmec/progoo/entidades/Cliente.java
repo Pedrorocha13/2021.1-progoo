@@ -1,5 +1,6 @@
 package br.ibmec.progoo.entidades;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Objects;
 
@@ -50,6 +51,10 @@ public class Cliente {
         for (Cliente cliente : ClienteDB.listar()) {
             System.out.println(cliente);
         }
+    }
+
+    public static void exportar(String nomeArquivo) throws IOException {
+        ClienteDB.exportar(nomeArquivo);
     }
 
     @Override

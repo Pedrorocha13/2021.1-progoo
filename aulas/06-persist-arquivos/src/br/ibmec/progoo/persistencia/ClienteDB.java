@@ -1,10 +1,12 @@
 package br.ibmec.progoo.persistencia;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import br.ibmec.progoo.entidades.Cliente;
+import br.ibmec.progoo.util.Arquivo;
 
 public class ClienteDB {
     private static List<Cliente> clientes = new ArrayList<>();
@@ -26,5 +28,15 @@ public class ClienteDB {
 
     public static List<Cliente> listar() {
         return Collections.unmodifiableList(clientes);
+    }
+
+    public static void exportar(String nomeArquivo) throws IOException {
+        List<String> linhas = new ArrayList<>();
+
+        for (Cliente cliente : ClienteDB.listar()) {
+            linhas.add(cliente.toString());
+        }
+
+        Arquivo.escrever(nomeArquivo, linhas);
     }
 }
