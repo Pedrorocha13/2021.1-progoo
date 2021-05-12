@@ -57,6 +57,10 @@ public class Cliente {
         ClienteDB.exportar(nomeArquivo);
     }
 
+    public static void importar(String nomeArquivo) throws IOException {
+        ClienteDB.importar(nomeArquivo);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == this)

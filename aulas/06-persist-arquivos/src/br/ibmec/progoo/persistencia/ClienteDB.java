@@ -39,4 +39,13 @@ public class ClienteDB {
 
         Arquivo.escrever(nomeArquivo, linhas);
     }
+
+     public static void importar(String nomeArquivo) throws IOException {
+         List<String> linhas = Arquivo.ler(nomeArquivo);
+
+         for (String linha : linhas) {
+             String[] dadosCliente = linha.split(",");
+             ClienteDB.adicionar(new Cliente(dadosCliente[0], dadosCliente[1], dadosCliente[2]));
+         }
+     }
 }

@@ -19,7 +19,8 @@ public class Seletor {
         System.out.println("3 - Remover um cliente;");
         System.out.println("4 - Pesquisar um cliente pelo CPF;");
         System.out.println("5 - Exibir todos os clientes cadastrados;");
-        System.out.println("6 - Salvar clientes em um arquivo de texto.");
+        System.out.println("6 - Salvar clientes em um arquivo de texto;");
+        System.out.println("7 - Ler clientes de um arquivo de texto.");
     }
 
     public String processaOpcoes(String opcao) throws IOException {
@@ -57,6 +58,12 @@ public class Seletor {
                 String caminhoExportar = leitoraDados.lerTexto();
 
                 Cliente.exportar(caminhoExportar);
+                break;
+            case "7":
+                System.out.print("Informe o nome do arquivo para ler: ");
+                String caminhoImportar = leitoraDados.lerTexto();
+
+                Cliente.importar(caminhoImportar);
                 break;
             default:
                 System.out.println("Volte sempre!");
