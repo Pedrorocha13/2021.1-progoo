@@ -26,7 +26,7 @@ public class Programa {
         System.out.println(mensagem.aplicacaoErrada());
         System.out.println(mensagem.aplicacaoConcatString());
 
-        System.out.println("# Persistência");
+        System.out.println("# PersistÃªncia");
 
         LeitoraDados leitoraDados = new LeitoraDados();
         Seletor seletor = new Seletor();
