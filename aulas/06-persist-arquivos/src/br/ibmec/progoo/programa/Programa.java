@@ -6,7 +6,18 @@ import br.ibmec.progoo.aplicacoes.Lista;
 import br.ibmec.progoo.aplicacoes.Mapa;
 import br.ibmec.progoo.util.LeitoraDados;
 
+/**
+ * Classe de entrada do programa de cadastro de clientes.
+ */
 public class Programa {
+    /**
+     * Método de entrada. Roda as funcionalidades do projeto.
+     *
+     * @param args          Argumentos do projeto.
+     * @throws Exception    Caso ocorra alguma exceção genérica.
+     *
+     * @author              vmachado
+     */
     public static void main(String[] args) throws Exception {
         Lista lista = new Lista();
         Mapa map = new Mapa();

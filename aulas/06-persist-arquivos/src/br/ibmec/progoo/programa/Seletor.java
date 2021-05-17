@@ -5,13 +5,22 @@ import java.io.IOException;
 import br.ibmec.progoo.entidades.Cliente;
 import br.ibmec.progoo.util.LeitoraDados;
 
+/**
+ * Classe para operar a seleção do usuário.
+ */
 public class Seletor {
     private LeitoraDados leitoraDados;
 
+    /**
+     * Construtor vazio. Inicia uma leitora de dados.
+     */
     public Seletor() {
         this.leitoraDados = new LeitoraDados();
     }
 
+    /**
+     * Exibe as opções do programa.
+     */
     public void exibeOpcoes() {
         System.out.println("Selecione um número, ou aperte qualquer outro valor para sair:");
         System.out.println("1 - Cadastrar um cliente;");
@@ -23,6 +32,13 @@ public class Seletor {
         System.out.println("7 - Ler clientes de um arquivo de texto.");
     }
 
+    /**
+     * Processa a opção dada pelo usuário, e realiza ação conforme necessário.
+     *
+     * @param opcao         Uma string dada pelo usuário, representando alguma opção válida do programa.
+     * @return              A opção selecionada, ou uma string vazia caso a opção tenha sido inválida.
+     * @throws IOException  Caso ocorra um erro na leitura ou escrita de um arquivo.
+     */
     public String processaOpcoes(String opcao) throws IOException {
         switch(opcao) {
             case "1":
