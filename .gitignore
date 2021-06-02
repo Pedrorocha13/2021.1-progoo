@@ -3,6 +3,7 @@ referencias
 roteiros
 **/.vscode
 progoo_notas_faltas.xlsx
+~$progoo_notas_faltas.xlsx
 tarefas/*
 **/*.jar
 **/bin
