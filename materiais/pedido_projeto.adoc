@@ -114,3 +114,28 @@ Incluir também o projeto e implementação dos seguintes requisitos funcionais:
 |O software deve permitir alterar o preço de produtos previamente cadastrados.
 
 |===
+
+=== Sprint 3 - Prazo 30/06/2021
+
+Além da refatoração do código anterior conforme comentários apresentados pelo cliente, atualizar o diagrama de classes do projeto e o diagrama de casos de uso (com descrição) de pelo menos três funcionalidades.
+
+Incluir também o projeto e implementação dos seguintes requisitos funcionais:
+
+.Requisitos funcionais para a sprint 2
+[cols="^1,7"]
+|===
+|# ^|Descrição
+
+|RF14
+|O software deve persistir os dados de vendas anteriores, produtos em estoque, clientes e vendedores cadastrados em arquivos .csv.
+
+|RF15
+|Ao inicializar o programa, o software deve recuperar as informações salvas automaticamente, de forma que seja possível executar uma venda imediatamente, utilizando dados já armazenados.
+
+|RF16
+|Durante a realização de uma venda, o software deve identificar se o cliente está fazendo aniversário. Caso seja o seu dia de aniversário, o software deve aplicar um desconto de 10% na venda.
+
+|RF17
+|O software deve implementar um caixa, que armazena todos os valores das vendas realizados. Esse caixa deve ser persistido em um arquivo .csv, e aberto durante a inicialização, como no RF15.
+
+|===
